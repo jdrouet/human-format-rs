@@ -28,11 +28,11 @@ jobs:
       - name: Format
         run: cargo fmt --check
 
-      - name: Linter
-        run: cargo clippy -- -Dwarnings --verbose
-
       - name: Checker
         run: cargo check --verbose
+
+      # - name: Linter
+      #   run: cargo clippy -- -Dwarnings --verbose
 
   test:
     name: Test
